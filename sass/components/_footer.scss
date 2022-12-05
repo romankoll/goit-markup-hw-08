@@ -4,13 +4,22 @@
 }
 .footer-container {
   display: flex;
-  gap: 70px;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 60px;
+  @media screen and ( min-width: 1200px) {
+    gap: 70px;
+  }
 }
 
 .logo__footer {
-  display: inline-block;
+  display: block;
+ text-align: center;
   margin-bottom: 20px;
+  
 
+  @media  screen and ( min-width: 1200px) {
+    text-align: left;}
   &-span {
     color: $text-fon-white-color;
   }
@@ -21,7 +30,8 @@
 }
 
 .footer__link {
-  display: inline-block;
+  display: block;
+  text-align: center;
   width: 231px;
 
   font-style: normal;
@@ -34,6 +44,9 @@
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media  screen and ( min-width: 1200px) {
+    text-align: left;}
 
   &:hover,
   &:focus {
@@ -50,11 +63,16 @@
   }
 }
 .footer__center {
-  padding-top: 12px;
+  @media  screen and ( min-width: 1200px) {
   margin-right: 23px;
+  padding-top: 12px;}
+  
 }
 .footer__text {
-  width: 116px;
+  display: block;
+  text-align: center;
+
+  
   margin-bottom: 20px;
 
   font-weight: 700;
@@ -64,6 +82,9 @@
   text-transform: uppercase;
 
   color: $text-fon-white-color;
+  @media  screen and ( min-width: 1200px) {
+     text-align: left;
+    }
 }
 
 .social__link-footer {
@@ -81,11 +102,16 @@
 }
 
 .footer__end {
-  padding-top: 12px;
+  
 
-  width: 570px;
+  //width: 570px;
+  @media  screen and ( min-width: 1200px) {
+    padding-top: 12px;
+   }
 }
 .footer__subtitle {
+  display: block;
+  text-align: center;
   margin-bottom: 20px;
 
   font-weight: 700;
@@ -95,15 +121,28 @@
   text-transform: uppercase;
 
   color: $text-fon-white-color;
+
+  @media  screen and ( min-width: 1200px) {
+    text-align: left;
+   }
 }
 
 .footer__subscription {
   display: flex;
   align-items: center;
-  gap: 12px;
+  flex-direction: column;
+  gap: 20px;
+  @media  screen and ( min-width: 1200px) {
+    flex-direction: row;
+    gap: 12px;
+   }
 }
 .footer__label {
-  flex-basis: 358px;
+  width:450px ;
+  @media  screen and ( min-width: 1200px) {
+    width: 358px;
+   }
+  
 }
 
 .footer__input {
