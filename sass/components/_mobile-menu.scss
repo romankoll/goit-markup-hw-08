@@ -1,32 +1,29 @@
-  .menu-toggle {
-   
+.menu-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  
-    margin-left: auto;
-    padding: 0;
-    background-color: transparent;
-    cursor: pointer;
-    border: none;
-    border-radius: 50%;
-    outline: none;
+  margin-left: auto;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+}
+
+@media (min-width: 768px) {
+  .menu-toggle {
+    display: none;
   }
-  
-  @media (min-width: 768px) {
-    .menu-toggle {
-      display: none;
-    }
-  }
-  
-  .menu-toggle:hover,
-  .menu-toggle:focus {
-    color:$link-focus-color; 
-   
-  }
-  .menu__icon{
-    fill: $text-black-color;
+}
+
+.menu-toggle:hover,
+.menu-toggle:focus {
+  color: $link-focus-color;
+}
+.menu__icon {
+  fill: $text-black-color;
 
   transition-property: fill;
   transition-duration: 250ms;
@@ -36,118 +33,116 @@
   &:hover {
     fill: $link-focus-color;
   }
-  }
-
-  .menu-container {
-    position: fixed;
-    top: 0;
-    left: 0;
-
-    display: flex;
-    flex-direction: column;
-
-    width: 100vw;
-    height: 100vh;
-    padding: 48px 0;
-    padding-left: 40px;
-    background-color: $text-fon-white-color;
-    z-index: 999;
-  
-    transform: translateX(100%);
-    transition: transform 250ms ease-in-out;
-  }
-  
-  .menu-container.is-open {
-    transform: translateX(0);
-  }
-  
-  .menu-container .menu-toggle {
-    position: absolute;
-    top: 10px;
-    right: 15px;
-    color: #fff;
-  }
-  
-  .mobile-menu {
-    display: flex;
-  flex-direction: column;
-   gap: 32px;
-    padding: 0;
-    margin: 0;
-    list-style: none;
-  }
-  
-  .mobile-menu .link {
-    display: block;
-   
-
-    font-weight: 500;
-    font-size: 40px;
-    line-height:calc(47/40) ;
-    letter-spacing: 0.02em;
-
-    color: $text-black-color;
-    text-decoration: none;
-   
-  }
-
-  .mobile-menu .active{
-    color: $link-focus-color;
-  }
-  .menu__contacts{
-    margin-top: auto;
-  }
-  .menu__contacts-phone{
-    display: block;
-    margin-bottom: 32px;
-
-    font-weight: 500;
-    font-size: 34px;
-    line-height:calc(40/34) ;
-
-    letter-spacing: 0.02em;
-
-    color: $link-focus-color;
-  }
-  .menu__contacts-link{
-    display: block;
-    margin-bottom: 64px;
-    font-weight: 500;
-    font-size: 24px;
-    line-height:calc(28/24);
-    letter-spacing: 0.02em;
-
-    color: $text-paragraf-color;
-  }
-  .menu__socials{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-  }
-  .menu__socials-link{
-
-    position: relative;
-    font-weight: 500;
-    font-size: 18px;
-    line-height:calc(22/18) ;
-
-    letter-spacing: 0.02em;
-    color: $link-focus-color;
-
-    &::after/*:not(:last-child)*/{
-      content: " ";
-      position: absolute;
-      top: 50%;
-      right: -10px;
-      transform: translateY(-50%);
-
-      display: block;
-      width: 1px;
-      height: 100%;
-
-
-      background-color: rgba(33, 33, 33, 0.2);;
-      
-
 }
+
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  flex-direction: column;
+
+  width: 100vw;
+  height: 100vh;
+  padding: 48px 0;
+  padding-left: 40px;
+  background-color: $text-fon-white-color;
+  z-index: 999;
+
+  transform: translateX(100%);
+  transition: transform 250ms ease-in-out;
+
+  transition-property: transform;
+  transition-duration: 350ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu-container.is-open {
+  transform: translateX(0);
+}
+
+.menu-container .menu-toggle {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: #fff;
+}
+
+.mobile-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.mobile-menu .link {
+  display: block;
+
+  font-weight: 500;
+  font-size: 40px;
+  line-height: calc(47 / 40);
+  letter-spacing: 0.02em;
+
+  color: $text-black-color;
+  text-decoration: none;
+}
+
+.mobile-menu .active {
+  color: $link-focus-color;
+}
+.menu__contacts {
+  margin-top: auto;
+}
+.menu__contacts-phone {
+  display: block;
+  margin-bottom: 32px;
+
+  font-weight: 500;
+  font-size: 34px;
+  line-height: calc(40 / 34);
+
+  letter-spacing: 0.02em;
+
+  color: $link-focus-color;
+}
+.menu__contacts-link {
+  display: block;
+  margin-bottom: 64px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: calc(28 / 24);
+  letter-spacing: 0.02em;
+
+  color: $text-paragraf-color;
+}
+.menu__socials {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.menu__socials-link {
+  position: relative;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: calc(22 / 18);
+
+  letter-spacing: 0.02em;
+  color: $link-focus-color;
+
+  &::after/*:not(:last-child)*/ {
+    content: ' ';
+    position: absolute;
+    top: 50%;
+    right: -10px;
+    transform: translateY(-50%);
+
+    display: block;
+    width: 1px;
+    height: 100%;
+
+    background-color: rgba(33, 33, 33, 0.2);
   }
+}
