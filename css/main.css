@@ -259,7 +259,7 @@ img {
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/bg/img_sm.png");
   background-repeat: no-repeat;
   background-position: center;
-  width: 480px;
+  background-size: cover;
   margin: 0 auto;
   text-align: center;
   padding-top: 118px;
@@ -308,6 +308,7 @@ img {
   }
 }
 .hero__title {
+  display: block;
   font-weight: 900;
   font-size: 26px;
   line-height: 1.6153846154;
