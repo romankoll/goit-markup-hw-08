@@ -1,9 +1,14 @@
 .portfolio__buttons {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 8px;
   margin-bottom: 50px;
+  padding-right: 50px;
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+    padding-right: 0;
+  }
 }
 
 .portfolio__btn {

@@ -7,19 +7,19 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 60px;
-  @media screen and ( min-width: 1200px) {
+  @media screen and (min-width: 1200px) {
     gap: 70px;
   }
 }
 
 .logo__footer {
   display: block;
- text-align: center;
+  text-align: center;
   margin-bottom: 20px;
-  
 
-  @media  screen and ( min-width: 1200px) {
-    text-align: left;}
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
   &-span {
     color: $text-fon-white-color;
   }
@@ -45,8 +45,9 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-  @media  screen and ( min-width: 1200px) {
-    text-align: left;}
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
 
   &:hover,
   &:focus {
@@ -63,16 +64,19 @@
   }
 }
 .footer__center {
-  @media  screen and ( min-width: 1200px) {
-  margin-right: 23px;
-  padding-top: 12px;}
-  
+  @media screen and (min-width: 768px) {
+    margin-left: 105px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 23px;
+    margin-left: 0;
+    padding-top: 12px;
+  }
 }
 .footer__text {
   display: block;
   text-align: center;
 
-  
   margin-bottom: 20px;
 
   font-weight: 700;
@@ -82,9 +86,9 @@
   text-transform: uppercase;
 
   color: $text-fon-white-color;
-  @media  screen and ( min-width: 1200px) {
-     text-align: left;
-    }
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
 }
 
 .social__link-footer {
@@ -102,12 +106,10 @@
 }
 
 .footer__end {
-  
-
   //width: 570px;
-  @media  screen and ( min-width: 1200px) {
+  @media screen and (min-width: 1200px) {
     padding-top: 12px;
-   }
+  }
 }
 .footer__subtitle {
   display: block;
@@ -122,9 +124,9 @@
 
   color: $text-fon-white-color;
 
-  @media  screen and ( min-width: 1200px) {
+  @media screen and (min-width: 1200px) {
     text-align: left;
-   }
+  }
 }
 
 .footer__subscription {
@@ -132,17 +134,16 @@
   align-items: center;
   flex-direction: column;
   gap: 20px;
-  @media  screen and ( min-width: 1200px) {
+  @media screen and (min-width: 1200px) {
     flex-direction: row;
     gap: 12px;
-   }
+  }
 }
 .footer__label {
-  width:450px ;
-  @media  screen and ( min-width: 1200px) {
+  width: 450px;
+  @media screen and (min-width: 1200px) {
     width: 358px;
-   }
-  
+  }
 }
 
 .footer__input {
@@ -180,9 +181,8 @@
   }
 }
 .footer__btn {
-  display: block;
-  margin: 0 auto;
-
+  display: flex;
+  align-items: center;
   justify-content: center;
 
   min-width: 200px;
@@ -194,9 +194,6 @@
   font-size: 16px;
   line-height: calc(30 / 16);
 
-  display: flex;
-  align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
   background: $link-focus-color;
   cursor: pointer;

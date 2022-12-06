@@ -74,6 +74,7 @@
       <section>
         <div class="container">
           <h1 hidden>Портфоліо</h1>
+
           <ul class="portfolio__buttons list">
             <li><button type="button" class="portfolio__btn">Усі</button></li>
             <li><button type="button" class="portfolio__btn">Веб-сайти</button></li>
@@ -86,7 +87,21 @@
             <li class="portfolio-items card-set-items">
               <a href="" class="portfolio__link link">
                 <div class="portfolio__thumb">
-                  <img src="./images/product1.jpg" alt="product1" width="370" />
+                  <img
+                    srcset="
+                      ./images/portfolio/img1/img_md.jpg    354w,
+                      ./images/portfolio/img1/img_lg.jpg    370w,
+                      ./images/portfolio/img1/img_sm.jpg    450w,
+                      ./images/portfolio/img1/img_md@2x.jpg 708w,
+                      ./images/portfolio/img1/img_lg@2x.jpg 740w,
+                      ./images/portfolio/img1/img_sm@2x.jpg 900w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                    src="./images/portfolio/img1/img_lg.jpg"
+                    alt="product2"
+                    width="370"
+                    loading="lazy"
+                  />
                   <div class="overlay">
                     <p class="overley__text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -104,7 +119,21 @@
             <li class="portfolio-items card-set-items">
               <a href="" class="portfolio__link link">
                 <div class="portfolio__thumb">
-                  <img src="./images/product2.jpg" alt="product2" width="370" />
+                  <img
+                    srcset="
+                      ./images/portfolio/img1/img_md.jpg    354w,
+                      ./images/portfolio/img1/img_lg.jpg    370w,
+                      ./images/portfolio/img1/img_sm.jpg    450w,
+                      ./images/portfolio/img1/img_md@2x.jpg 708w,
+                      ./images/portfolio/img1/img_lg@2x.jpg 740w,
+                      ./images/portfolio/img1/img_sm@2x.jpg 900w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                    src="./images/portfolio/img1/img_lg.jpg"
+                    alt="product2"
+                    width="370"
+                    loading="lazy"
+                  />
                   <div class="overlay">
                     <p class="overley__text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
