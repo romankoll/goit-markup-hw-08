@@ -62,14 +62,10 @@
             >
           </li>
         </ul>
-        <button
-          class="menu-toggle js-open-menu"
-          aria-expanded="false"
-          aria-controls="mobile-menu"
-        >
+        <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
           <svg class="header__mobile-menu" width="40" height="40">
-          <use href="./images/icons.svg#icon-menu_40px"></use>
-        </svg>
+            <use href="./images/icons.svg#icon-menu_40px"></use>
+          </svg>
         </button>
       </div>
     </header>
@@ -358,39 +354,42 @@
         </div>
       </div>
     </footer>
-<!------------MADAL MENU------------>
-<div class="menu-container js-menu-container" id="mobile-menu">
-  <button class="menu-toggle js-close-menu">
-    <svg class="menu__icon" width="40" height="40">
-      <use href="./images/icons.svg#icon-close_40px"></use>
-    </svg>
-  </button>
+    <!------------MADAL MENU------------>
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg class="menu__icon" width="40" height="40">
+          <use href="./images/icons.svg#icon-close_40px"></use>
+        </svg>
+      </button>
 
-  <ul class="mobile-menu">
-    <li class><a href="./index.html" class="link active">Студія</a></li>
-    <li class><a href="./portfolio.html" class="link">Портфоліо</a></li>
-    <li class><a href="" class="link">Контакти</a></li>
-  </ul>
-  <ul class="menu__contacts list">
-    <li class="menu__contacts-item"><a href="" class="menu__contacts-phone link">+38 096 111 11 11</a></li>
-    <li class="menu__contacts-item"><a href="" class="menu__contacts-link link">info@devstudio.com</a></li>
-  </ul>
-  <ul class="menu__socials list">
-    <li class="menu__socials-item"><a href="" class="menu__socials-link link">Instagram</a></li>
-    <li class="menu__socials-item"><a href="" class="menu__socials-link link">Twitter</a></li>
-    <li class="menu__socials-item"><a href="" class="menu__socials-link link">Facebook</a></li>
-    <li class="menu__socials-item"><a href="" class="menu__socials-link link">LinkedIn</a></li>
-  </ul>
-</div>
+      <ul class="mobile-menu">
+        <li class><a href="./index.html" class="link">Студія</a></li>
+        <li class><a href="./portfolio.html" class="link active">Портфоліо</a></li>
+        <li class><a href="" class="link">Контакти</a></li>
+      </ul>
+      <ul class="menu__contacts list">
+        <li class="menu__contacts-item">
+          <a href="" class="menu__contacts-phone link">+38 096 111 11 11</a>
+        </li>
+        <li class="menu__contacts-item">
+          <a href="" class="menu__contacts-link link">info@devstudio.com</a>
+        </li>
+      </ul>
+      <ul class="menu__socials list">
+        <li class="menu__socials-item"><a href="" class="menu__socials-link link">Instagram</a></li>
+        <li class="menu__socials-item"><a href="" class="menu__socials-link link">Twitter</a></li>
+        <li class="menu__socials-item"><a href="" class="menu__socials-link link">Facebook</a></li>
+        <li class="menu__socials-item"><a href="" class="menu__socials-link link">LinkedIn</a></li>
+      </ul>
+    </div>
 
-<script src="./js/modal.js"></script>
-<script
-  defer
-  src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
-  integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-  crossorigin="anonymous"
-></script>
-<script defer src="./js/mobile-menu.js"></script>
-
+    <script src="./js/modal.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>
