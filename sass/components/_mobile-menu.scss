@@ -139,18 +139,17 @@
 
   letter-spacing: 0.02em;
   color: $link-focus-color;
+}
+.menu__socials-after::after {
+  content: ' ';
+  position: absolute;
+  top: 50%;
+  right: -10px;
+  transform: translateY(-50%);
 
-  &::after/*:not(:last-child)*/ {
-    content: ' ';
-    position: absolute;
-    top: 50%;
-    right: -10px;
-    transform: translateY(-50%);
+  display: block;
+  width: 1px;
+  height: 100%;
 
-    display: block;
-    width: 1px;
-    height: 100%;
-
-    background-color: rgba(33, 33, 33, 0.2);
-  }
+  background-color: rgba(33, 33, 33, 0.2);
 }

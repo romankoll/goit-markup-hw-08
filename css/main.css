@@ -1561,7 +1561,8 @@ img {
   letter-spacing: 0.02em;
   color: #2196f3;
 }
-.menu__socials-link::after {
+
+.menu__socials-after::after {
   content: " ";
   position: absolute;
   top: 50%;
