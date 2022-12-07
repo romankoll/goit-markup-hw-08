@@ -40,9 +40,10 @@
   transition-duration: 250ms, 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1), cubic-bezier(0.4, 0, 0.2, 1);
 
-  @media screen and ( min-width: 1200px) {
-  width: 528px;
-  min-height: 581px;}
+  @media screen and (min-width: 1200px) {
+    width: 528px;
+    min-height: 581px;
+  }
 }
 
 .backdrop.is-hidden .modal {
@@ -93,8 +94,9 @@
   letter-spacing: 0.03em;
 
   color: $text-black-color;
-  @media  screen and ( min-width: 1200px) {
-    line-height: calc(23 / 20);}
+  @media screen and (min-width: 1200px) {
+    line-height: calc(23 / 20);
+  }
 }
 .modal__group {
   margin-bottom: 20px;
@@ -188,16 +190,15 @@
 }
 .modal__agreement-desc {
   font-size: 12px;
-  line-height:calc(14/12) ;
-
-
+  line-height: calc(14 / 12);
 
   letter-spacing: 0.03em;
 
   color: $text-paragraf-color;
-  @media  screen and ( min-width: 1200px) {
+  @media screen and (min-width: 1200px) {
     font-size: 14px;
-  line-height: calc(24 / 14);}
+    line-height: calc(24 / 14);
+  }
 }
 .modal__link {
   color: $link-focus-color;
@@ -230,6 +231,9 @@
 }
 
 .modal__btn {
+  display: block;
+  margin: 0 auto;
+
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);

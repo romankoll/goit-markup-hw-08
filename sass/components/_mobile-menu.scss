@@ -129,7 +129,11 @@
 .menu__socials {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 10px;
+}
+.menu__socials-item:not(:last-child) {
+  padding-right: 9px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
 .menu__socials-link {
   position: relative;
@@ -139,17 +143,18 @@
 
   letter-spacing: 0.02em;
   color: $link-focus-color;
-}
-.menu__socials-after::after {
-  content: ' ';
-  position: absolute;
-  top: 50%;
-  right: -10px;
-  transform: translateY(-50%);
+  /*
+  &:not(:last-child)::after {
+    content: ' ';
+    position: absolute;
+    top: 50%;
+    right: -10px;
+    transform: translateY(-50%);
 
-  display: block;
-  width: 1px;
-  height: 100%;
+    display: block;
+    width: 1px;
+    height: 100%;
 
-  background-color: rgba(33, 33, 33, 0.2);
+    background-color: rgba(33, 33, 33, 0.2);
+  }*/
 }
